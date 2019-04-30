@@ -1,0 +1,7 @@
+版本1.0：直接通过unicode转码后比对，存在bug；部分中文转换失败，如：态；如：鑫，无法识别
+版本2.0：借用文字转语音的思路，将汉字通过unicode_py.txt表进行匹配，转换为拼音，然后进行切分等操作处理，效果较好，
+目前未发现问题。
+
+脚本使用方法；
+    1.将需要转换的中文放入search_table_list.txt中，支持多行数据一起转换；
+    2.执行get_pinyin_first_letter.py脚本，结果在result_table_list.txt中
