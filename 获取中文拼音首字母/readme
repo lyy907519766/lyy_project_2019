@@ -5,3 +5,6 @@
 脚本使用方法；
     1.将需要转换的中文放入search_table_list.txt中，支持多行数据一起转换；
     2.执行get_pinyin_first_letter.py脚本，结果在result_table_list.txt中
+
+注意：
+    英文、数字、标准符号，不进行转换，保留原数据
